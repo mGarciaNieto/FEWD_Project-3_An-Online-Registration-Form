@@ -29,15 +29,15 @@
           <fieldset>
             <legend>Contact Information</legend>
             <label for="fname">Full Name</label>
-            <input type="text" id="fname" value="" placeholder="Required" required /><br />
+            <input type="text" id="fname" name="fname" value="" placeholder="Required" required /><br />
             <label for="email">Email Address</label>
-            <input type="email" id="email" value="" placeholder="Required" required /><br />
+            <input type="email" id="email" name="email" value="" placeholder="Required" required /><br />
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" value="" /><br />
+            <input type="tel" id="phone" name="phone" value="" placeholder="Telephone" /><br />
             <label for="address">Street Address</label>
-            <input type="text" id="address" value="" /><br />
+            <input type="text" id="address" name="address" value="" placeholder="Address" /><br />
             <label for="city">City</label>
-            <input type="text" id="city" value="" /><br />
+            <input type="text" id="city" name="city" value="" placeholder="City" /><br />
             <label for="state">State</label>
             <select name="state" id="state">
               <option value="" selected="true" disabled="disabled">Choose State</option>
@@ -94,7 +94,7 @@
               <option value="WY">Wyoming</option>
             </select>
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" value="" />
+            <input type="text" id="zip" value="" placeholder="Zip Code" />
           </fieldset>
         </section>
         <hr />
@@ -103,11 +103,11 @@
           <fieldset>
             <legend>Newsletter</legend>
             <p>Select the newsletters you would like to receive</p>
-            <input type="checkbox" id="html_news" name="html_news" value="Bike" />
+            <input type="checkbox" id="html_news" name="html_news" value="" />
             <label for="html_news"> HTML News</label><br />
-            <input type="checkbox" id="css_news" name="css_news" value="Car" />
+            <input type="checkbox" id="css_news" name="css_news" value="" />
             <label for="css_news"> CSS News</label><br />
-            <input type="checkbox" id="javascript_news" name="javascript_news" value="Boat" />
+            <input type="checkbox" id="javascript_news" name="javascript_news" value="" />
             <label for="javascript_news"> JavaScript News</label>
             <p>Newsletter format</p>
             <input type="radio" id="html" name="format" value="HTML" />
@@ -115,8 +115,8 @@
             <input type="radio" id="plain_text" name="format" value="Plain Text" />
             <label for="plain_text">Plain text</label>
             <p>Other topics you'd like to hear about</p>
-            <textarea name="message"></textarea><br />
-            <input type="submit" value="Sign Up" />
+            <textarea name="message" id="message" placeholder="Type topics..." ></textarea><br />
+            <input type="submit" id="submit" name="submit" value="Sign Up" />
           </fieldset>
         </section>
       </form>

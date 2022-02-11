@@ -128,7 +128,8 @@ select:hover {
 .form__contact input:focus,
 select:focus {
   border: solid 5px black;
-  transition: 0.2s;
+  background-color: rgb(223, 210, 237);
+  transition: 2s;
 }
 
 .form__newsletter p {
@@ -154,7 +155,7 @@ input:last-child {
 
 .form__newsletter textarea:focus {
   border: solid 5px black;
-  transition: 0.2s;
+  transition: 2s;
 }
 
 .form__newsletter input:last-child {
@@ -169,6 +170,8 @@ input:last-child {
   background-color: rgba(126, 123, 123, 0.6);
   box-shadow: 0 5px 10px black;
   color: black;
+  cursor: pointer;
+  transition: 1s;
 }
 
 .form__newsletter textarea,
