@@ -1,0 +1,209 @@
+/* =======================
+  General settings
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =======================
+  Element selector settings
+========================== */
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(247, 226, 226);
+  font-size: 1.2rem;
+  /* font-family: 'Merriweather', serif; */
+
+  font-family: 'Orbitron', sans-serif;
+  line-height: 4rem;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(400deg, #d1ac00, rgb(150, 73, 73));
+  border: double 10px black;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding: 2%;
+}
+
+main {
+  margin: auto;
+  background-color: #eef1ef;
+  text-align: center;
+  max-width: 769px;
+  padding: 3%;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+}
+
+main fieldset {
+  border: hidden;
+}
+
+main legend {
+  display: none;
+}
+
+main p,
+label {
+  font-size: 1.5rem;
+}
+
+main hr:nth-of-type(1) {
+  border: none;
+  height: 5px;
+  background-color: black;
+}
+
+form {
+  text-align: left;
+}
+
+footer {
+  background-color: #002400;
+  color: white;
+  text-align: center;
+  padding: 1%;
+  font-size: 1rem;
+}
+
+/* =======================
+  Class selector settings
+========================== */
+
+.form__header {
+  padding: 2% 0 3%;
+}
+
+.form__header h2 {
+  padding-bottom: 1%;
+}
+
+.form__header p {
+  color: rgb(198, 173, 173);
+  line-height: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.form__contact,
+.form__newsletter {
+  padding: 5% 0;
+}
+
+.form__contact input,
+select {
+  display: block;
+  width: 100%;
+  line-height: 400%;
+  background-color: rgb(230, 222, 222);
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 5%;
+}
+
+.form__contact input:hover,
+select:hover {
+  cursor: pointer;
+}
+
+.form__contact input:last-child {
+  width: 50%;
+}
+
+.form__contact select {
+  text-align: left;
+  padding: 5%;
+}
+
+.form__contact input:focus,
+select:focus {
+  border: solid 5px black;
+  transition: 0.2s;
+}
+
+.form__newsletter p {
+  line-height: 150%;
+  padding: 5% 0;
+}
+
+.form__newsletter p:nth-child(n + 3) {
+  padding-top: 10%;
+}
+
+.form__newsletter textarea,
+input:last-child {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+}
+
+.form__newsletter textarea {
+  line-height: 400%;
+  background-color: rgb(230, 222, 222);
+}
+
+.form__newsletter textarea:focus {
+  border: solid 5px black;
+  transition: 0.2s;
+}
+
+.form__newsletter input:last-child {
+  line-height: 300%;
+  background-color: rgb(216, 172, 172);
+
+  color: white;
+  font-size: 2rem;
+}
+
+.form__newsletter input:last-child:hover {
+  background-color: rgba(126, 123, 123, 0.6);
+  box-shadow: 0 5px 10px black;
+  color: black;
+}
+
+.form__newsletter textarea,
+input[type='checkbox'],
+input[type='radio'] {
+  cursor: pointer;
+}
+
+/* =======================
+  Id selector settings
+========================== */
+
+#form hr,
+main hr:nth-of-type(2) {
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 2px 0;
+}
+
+/* =======================
+  Media Queries
+========================== */
+
+@media (min-width: 768px) {
+  .form__contact input {
+    display: inline;
+    width: 70%;
+  }
+
+  .form__newsletter p {
+    padding: 3% 0;
+  }
+
+  .form__newsletter textarea {
+    margin-bottom: 2%;
+  }
+}
