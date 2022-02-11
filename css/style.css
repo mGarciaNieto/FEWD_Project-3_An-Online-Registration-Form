@@ -151,10 +151,12 @@ input:last-child {
 .form__newsletter textarea {
   line-height: 400%;
   background-color: rgb(230, 222, 222);
+  padding: 2%;
 }
 
 .form__newsletter textarea:focus {
   border: solid 5px black;
+  background-color: rgb(223, 210, 237);
   transition: 2s;
 }
 
@@ -197,9 +199,40 @@ main hr:nth-of-type(2) {
 ========================== */
 
 @media (min-width: 768px) {
-  .form__contact input {
-    display: inline;
-    width: 70%;
+  .form__contact h2 {
+    padding-bottom: 2%;
+  }
+
+  .form__contact-items {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .form__contact-item {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0;
+  }
+
+  .form__contact-items label {
+    width: 30%;
+  }
+
+  .form__contact-items input {
+    width: 100%;
+  }
+
+  .form__contact-item:last-child input {
+    width: 25%;
+  }
+
+  .form__contact-item:last-child label {
+    width: 22.5%;
+  }
+
+  .form__contact select {
+    padding: 3%;
   }
 
   .form__newsletter p {
