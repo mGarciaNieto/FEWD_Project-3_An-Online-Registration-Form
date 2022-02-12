@@ -152,6 +152,7 @@ input:last-child {
   line-height: 400%;
   background-color: rgb(230, 222, 222);
   padding: 2%;
+  resize: none;
 }
 
 .form__newsletter textarea:focus {

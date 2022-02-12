@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form - Manuel</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Orbitron:wght@700&display=swap"
+      rel="stylesheet" />
   </head>
+
   <body>
     <header>
       <h1>THE CODE REVIEW</h1>
@@ -22,7 +26,7 @@
       </section>
       <hr />
       <hr />
-      <form id="form" action="" method="">
+      <form id="form">
         <section class="form__contact">
           <h2>Contact Information</h2>
           <fieldset class="form__contact-items">
@@ -50,7 +54,7 @@
             <div class="form__contact-item">
               <label for="state">State</label>
               <select name="state" id="state">
-                <option value="" selected="true" disabled="disabled">Choose State</option>
+                <option value="" selected disabled>Choose State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -126,8 +130,8 @@
             <input type="radio" id="html" name="format" value="HTML" />
             <label for="html">HTML</label><br />
             <input type="radio" id="plain_text" name="format" value="Plain Text" />
-            <label for="plain_text">Plain text</label>
-            <p>Other topics you'd like to hear about</p>
+            <label for="plain_text">Plain text</label><br /><br />
+            <label>Other topics you'd like to hear about</label>
             <textarea name="message" id="message" placeholder="Type topics..."></textarea><br />
             <input type="submit" id="submit" name="submit" value="Sign Up" />
           </fieldset>
@@ -136,6 +140,13 @@
     </main>
     <footer>
       <p><em>Copyright The Code Review</em></p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border: 0; width: 88px; height: 31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+        </a>
+      </p>
     </footer>
   </body>
+
 </html>
