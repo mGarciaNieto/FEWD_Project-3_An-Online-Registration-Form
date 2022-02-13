@@ -183,6 +183,7 @@ input:last-child {
 input[type='checkbox'],
 input[type='radio'] {
   cursor: pointer;
+  margin-right: 10px;
 }
 
 /* =======================
