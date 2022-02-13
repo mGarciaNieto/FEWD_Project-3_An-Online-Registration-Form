@@ -50,6 +50,7 @@ main fieldset {
 }
 
 main legend {
+  padding-top: 5%;
   font-size: 1.7rem;
   font-weight: 700;
 }
